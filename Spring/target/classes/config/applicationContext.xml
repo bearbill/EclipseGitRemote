@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- 依赖注入三种方式	
+ 1.set注入  通过setXXX()赋值 通过反射机制 
+ 2.通过构造器方法赋值
+ 3.p 命名空间注入
+  --> 
+
+<!-- 	<bean id="student" class="com.xiong.project.Spring.info.Student">
+	<property name="name" value="xiongweijun"></property>
+	<property name="age" value="31"></property>
+	</bean> -->
+	
+<!-- 	<bean id="student" class="com.xiong.project.Spring.info.Student">
+	 <constructor-arg  value="xiongweijun"> </constructor-arg>
+	 <constructor-arg  value="31"> </constructor-arg>
+	</bean> -->
+
+
+
+	<bean id="student" class="com.xiong.project.Spring.info.Student" p:age="99" p:name="xiongjiale" p:list="xiong">
+
+	</bean>
+	
+	<bean id="allContectionType" class="com.xiong.project.Spring.info.AllConectionType">
+	<property name="list">
+	<list>
+	 <value>篮球</value>
+	 <value>足球</value>
+	 <value>乒乓球</value>
+	</list>
+	</property>
+	
+	</bean>
+	
+</beans>
