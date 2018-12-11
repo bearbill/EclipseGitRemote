@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
 
-//集合
+//集合的不同注入
 public class AllConectionType {
 	
 	private List<String> list; 
