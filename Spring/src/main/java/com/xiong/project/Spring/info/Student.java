@@ -5,8 +5,8 @@ import java.util.List;
 public class Student {
 	
 	
-	private String name;
-	private int age;
+	private String name; //名称
+	private int age; //年龄
 	private List list;
 	
 	
