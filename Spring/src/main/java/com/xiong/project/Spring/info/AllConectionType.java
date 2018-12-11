@@ -5,9 +5,10 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
 
+//集合
 public class AllConectionType {
 	
-	private List<String> list;
+	private List<String> list; 
 	private int[] array;
 	private Set<String> set;
 	private Map<String, String> map;
